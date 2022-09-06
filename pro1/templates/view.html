@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/">
+    <style>
+        * {
+            border: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            max-width: fit-content;
+            max-height: fit-content;
+            background-color: bisque;
+
+
+        }
+
+        .content-table {
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.9em;
+
+            border-radius: 5px 5px 0 0;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+            position: absolute;
+        }
+
+        .content-table tr th {
+            background-color: #009879;
+            color: #ffffff;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .content-table th,
+        .content-table td {
+            padding: 12px 15px;
+        }
+
+        .content-table tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        .content-table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        .content-table tbody tr:last-of-type {
+            border-bottom: 2px solid #009879;
+        }
+
+        .content-table tbody tr.active-row {
+            font-weight: bold;
+            color: #009879;
+        }
+
+        body {
+            background-color: bisque;
+
+        }
+
+
+
+
+        .image {
+            margin: 0vw;
+            width: 99vw;
+            height: 100vh;
+            /* background-image: url("https://www.carscoops.com/wp-content/uploads/2020/11/McLaren-Super-Garage-1.jpg");  */
+            /* background-color:bisque; */
+            background-size: cover;
+        }
+
+        .header {
+            overflow: hidden;
+            background-color: rgba(102, 97, 97, 0.836);
+            padding: 10px 10px;
+            padding: 10px;
+            justify-content: space-between;
+
+            text-align: center;
+
+            font-size: 10px;
+
+        }
+
+        .title1 {
+            padding: 20px 20px;
+            text-align: center;
+            font-size: 50px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: white;
+            position: relative;
+            top: 5%;
+
+        }
+
+        .header .h1 {
+            color: bisque;
+
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+
+        }
+
+        .t1 {
+            position: relative;
+            left: 20%;
+            /* padding: 50px, 50px; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+
+        <div class="container">
+            <div class="image">
+
+                <div class="header">
+                    <h2 class="h1">Vehicle Showroom Management System</h2>
+                </div>
+                <div class="t1">
+
+                    <table class="content-table" border="1">
+                        {% for r in content[1] %}
+
+                        <th>{{r}}</th>
+
+                        {% endfor %}
+                        {% for r in content[0] %}
+                        <tr>
+                            {% for i in range(r|length) %}
+                            <td>{{r[i]}}</td>
+                            {% endfor %}
+                        </tr>
+                        {% endfor %}
+
+
+                    </table>
+                </div>
+
+
+            </div>
+
+
+
+            <!-- {% for r in content: %}
+    <p>{{r}}</p>
+{% endfor%} -->
+
+</body>
+
+</html>
+

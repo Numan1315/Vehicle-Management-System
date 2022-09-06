@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/">
+  <style>
+    * {
+      border: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+
+    .container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      max-width: fit-content;
+      max-height: fit-content;
+      /* background-color: red;    */
+
+    }
+
+    
+
+
+   
+    .image {
+      margin: 0vw;
+      width: 99vw;
+      height: 100vh;
+      background-image: url("https://wallpaperaccess.com/full/1214402.jpg");
+      background-size: cover;
+
+    }
+
+    .header {
+      overflow: hidden;
+      background-color: rgba(102, 97, 97, 0.836);
+      padding: 10px 10px;
+      padding: 10px;
+      justify-content: space-between;
+
+      text-align: center;
+
+      font-size: 10px;
+
+    }
+
+    .header .h1 {
+      color: white;
+
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+
+    }
+
+    .needs-validation ::placeholder {
+      /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: white;
+      opacity: 1;
+      font-size:x-larger; 
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-weight: bold;
+
+      /* Firefox */
+    }
+
+    .needs-validation {
+      position: absolute;
+      top: 20%;
+      left:8%;
+     font-size: 20px;
+
+      /* border: 2px solid white; */
+      
+      
+      
+
+    }
+
+    .form-control {
+      background: transparent;
+      font-size: 30px;
+     
+
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+
+    <div class="container">
+      <div class="image">
+
+        <div class="header">
+          <h2 class="h1">Vehicle Showroom Management System</h2>
+        </div>
+        <br>
+        <br>
+
+        <form class="needs-validation" action="#" method="POST">
+          <div class="form-row">
+            <div class="form-group col-md-9">
+              <!-- <label for="saleid">sales id</label> -->
+              <input class="form-control" type="text" id="did" name="did" placeholder="Dealer id">
+            </div>
+
+
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group col-md-9">
+              <!-- / <label for="empid">emp id</label> -->
+              <input class="form-control" type="text" id="name" name="name" placeholder="Dealer Name">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-9">
+              <!-- <label for="status">payment status</label> -->
+              <input class="form-control" type="text" id="cno" name="cno" placeholder="Contact NO">
+            </div>
+
+          </div>
+
+          <button class="btn btn-primary" type="submit" value="Submit">Submit</button>
+
+
+
+        </form>
+      </div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <form action="#" method="POST">
+    <label for="did">dealer id</label><br>
+    <input type="text" id="did" name="did"><br>
+
+    <label for="name">name</label><br>
+    <input type="text" id="name" name="name"><br>
+
+    <label for="cno">contact no</label><br>
+    <input type="text" id="cno" name="cno"><br>
+
+    <button type="submit" value="Submit">Submit</button>
+  </form> -->
